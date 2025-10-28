@@ -38,7 +38,7 @@ layoutClass: gap-16
 <br>
 
 - 👨‍💻 **Développeur PHP Freelance**
-- ⏱️ **+20 ans d'expérience développement PHP**
+- ⏱️ **+20 ans d'expérience en PHP**
 - 🎓 **Certifié Symfony 7 Developer**
 - 🤖 **Boosté à l'IA**
 
@@ -65,7 +65,7 @@ class: my-custom-layout
 
 - **📅 Dates** : 9 et 10 octobre 2025
 - **📍 Lieu** : Disney Hotel New York - The Art of Marvel
-- **👥 Participants** : Plus de 700 participants
+- **👥** Plus de 700 participants
 - **🎤 Conférences** : Plus de 40 talks
 
 <div class="mt-4 text-sm opacity-75">
@@ -164,6 +164,14 @@ layout: default
 ---
 layout: default
 ---
+
+<!--
+**Mise en scène** : Lætitia habillée en avocate, plaidoirie pour SQL
+
+**Griefs courants** : lenteur, complexité, verbosité, pas moderne, dépassé par les ORM, dépassé par le NoSQL, performances douteuses
+
+**Démonstration** : Comparaison scripts PHP multi-requêtes vs query SQL unique - meilleures performances
+-->
 
 <div class="px-8 py-3 h-full flex flex-col">
 
@@ -291,7 +299,7 @@ layout: default
       </li>
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Reproductibilité garantie</span>
+        <span>Reproductibilité garantie (composer.lock)</span>
       </li>
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
@@ -312,6 +320,9 @@ layout: default
       <div>
         <div class="font-semibold text-purple-700 mb-1">Classmap & APCu</div>
         <div class="text-sm">Optimisé pour la production</div>
+        <pre class="text-xs bg-white p-1.5 rounded mt-1 leading-tight"><code>composer install --no-dev \
+  --optimize-autoloader \
+  --apcu-autoloader</code></pre>
       </div>
       <div>
         <div class="font-semibold text-green-700 mb-1">Commandes utiles</div>
@@ -327,60 +338,60 @@ layout: default
 layout: default
 ---
 
-<div class="px-8 py-6 h-full flex flex-col">
+<div class="px-8 py-4 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-4">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
     <img src="/img/kevin-dunglas.png" alt="Kévin Dunglas" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Kévin DUNGLAS</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">FrankenPHP, en dehors des sentiers battus</h1>
-    <p class="text-xl text-gray-600">Le serveur d'application PHP moderne écrit en Go</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">FrankenPHP, en dehors des sentiers battus</h1>
+    <p class="text-lg text-gray-600">Le serveur d'application PHP moderne soutenu par la PHP Foundation</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">⚡</span> Fonctionnalités avancées
+<div class="flex-1 grid grid-cols-2 gap-4">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">⚡</span> Fonctionnalités avancées
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
+    <ul class="space-y-1.5 text-base text-gray-700">
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Early Hints (103) pour précharger les assets</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span>Early Hints (103) pour accélérer le chargement</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Intégration native de Mercure</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span>Intégration de Mercure pour le temps réel</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Standalone binary tout-en-un</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
         <span>Worker mode pour performances optimales</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span>Packaging en un seul binaire sans dépendances</span>
       </li>
     </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🚀</span> Puissance de Go
+  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 shadow-md border-l-4 border-purple-500">
+    <h3 class="text-xl font-bold text-purple-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">🚀</span> Extensions et Workers en Go
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
+    <div class="space-y-2 text-base text-gray-700">
       <div>
-        <div class="font-semibold text-blue-700 mb-1">Go Extensions</div>
-        <div class="text-sm">Multi-thread, accès aux librairies Go</div>
+        <div class="font-semibold text-blue-700 mb-0.5">Exemples concrets</div>
+        <div class="text-sm">Transport Symfony Messenger, WebSocket, gRPC</div>
       </div>
       <div>
-        <div class="font-semibold text-purple-700 mb-1">Concurrent</div>
-        <div class="text-sm">Go Workers pour parallélisation</div>
+        <div class="font-semibold text-purple-700 mb-0.5">Haute performance</div>
+        <div class="text-sm">PHP délègue les tâches lourdes à Go</div>
       </div>
       <div>
-        <div class="font-semibold text-green-700 mb-1">Déploiement simple</div>
-        <div class="text-sm">Un seul exécutable avec tout intégré</div>
+        <div class="font-semibold text-green-700 mb-0.5">Écosystème unifié</div>
+        <div class="text-sm">Accès aux librairies Go sans quitter PHP</div>
       </div>
     </div>
   </div>
@@ -394,61 +405,78 @@ layout: default
 
 <div class="px-8 py-6 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-6">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
     <img src="/img/felix-eymonot.png" alt="Félix Eymonot" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Félix EYMONOT</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">Symfony UX Live Component</h1>
-    <p class="text-xl text-gray-600">Construire un tableau de bord interactif sans JS</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Symfony UX Live Component</h1>
+    <p class="text-lg text-gray-600">Construire un tableau de bord interactif sans JS</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">✨</span> Fonctionnalités
+<div class="flex-1 flex flex-col">
+
+<div class="grid grid-cols-2 gap-4 mb-2">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">
+      <span class="text-2xl">⚡</span> Temps réel en quelques attributs
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
+    <ul class="space-y-1.5 text-sm text-gray-700">
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Zéro ligne de JavaScript écrite</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span><strong>data-model</strong> : liaison bidirectionnelle + debounce auto</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>LiveProp : propriétés réactives</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span><strong>data-action</strong> : actions déclenchées au clic (tri)</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Polling natif avec data-poll</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span><strong>data-poll</strong> : rafraîchissement automatique</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>URL synchronisée avec url_true</span>
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span><strong>update_from_parent</strong> : synchro Chart.js</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-blue-500 mt-0.5">▸</span>
+        <span><strong>url_true</strong> : filtres sauvegardés dans l'URL</span>
       </li>
     </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🎯</span> Cas d'usage
+  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 shadow-md border-l-4 border-purple-500">
+    <h3 class="text-xl font-bold text-purple-900 mb-2 flex items-center gap-2">
+      <span class="text-2xl">🎯</span> Fonctionnalités implémentées
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
+    <div class="space-y-2 text-sm text-gray-700">
       <div>
-        <div class="font-semibold text-green-700 mb-1">✅ Parfait pour</div>
-        <div class="text-sm">Tableaux de bord, CRUD, équipes back-end</div>
+        <div class="font-semibold text-blue-700">🔍 Recherche interactive avec debounce automatique</div>
       </div>
       <div>
-        <div class="font-semibold text-orange-700 mb-1">⚠️ Moins adapté</div>
-        <div class="text-sm">Applications ultra temps réel, beaucoup d'animations</div>
+        <div class="font-semibold text-green-700">📊 Graphique Chart.js synchronisé avec les filtres</div>
       </div>
       <div>
-        <div class="font-semibold text-blue-700 mb-1">Débogage</div>
-        <div class="text-sm">Web Profiler Symfony comme avec les contrôleurs</div>
+        <div class="font-semibold text-purple-700">⬆️⬇️ Tri dynamique sur les colonnes</div>
+      </div>
+      <div>
+        <div class="font-semibold text-orange-700">🔗 Filtres (statut, période) avec URL partageable</div>
+      </div>
+      <div>
+        <div class="font-semibold text-indigo-700">🔄 Rafraîchissement automatique toutes les 10s</div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-2.5 shadow-md border-l-4 border-green-500">
+  <div class="text-lg font-bold text-green-900 text-center">
+    🚀 Résultat : Zéro ligne de JS, toutes les fonctionnalités temps réel en ~2h30 !
+  </div>
+</div>
+
 </div>
 
 </div>
@@ -460,9 +488,9 @@ layout: default
 <div class="px-8 py-6 h-full flex flex-col">
 
 <div class="flex items-start gap-6 mb-8">
-  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
+  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 135px;">
     <img src="/img/benjamin-rambaud.png" alt="Benjamin Rambaud" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
-    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Benjamin RAMBAUD</div>
+    <div class="text-xs font-semibold text-blue-900 leading-tight" style="font-size: 0.7rem;">Benjamin RAMBAUD</div>
   </div>
   <div class="flex-1">
     <h1 class="text-5xl font-bold text-gray-800 mb-3">Overcoming our Primitive Obsessions</h1>
@@ -473,22 +501,26 @@ layout: default
 <div class="flex-1 grid grid-cols-2 gap-6">
   <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
     <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🔍</span> Code Smells
+      <span class="text-3xl">🔍</span> L'obsession des primitives
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
+    <div class="space-y-2 text-base text-gray-700">
+      <div class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Types primitifs vs objets métier</span>
-      </li>
-      <li class="flex items-start gap-2">
+        <span><strong>Primitives</strong> : string, int, float, bool, array</span>
+      </div>
+      <div class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Exemple : prix en "string" dans Product</span>
-      </li>
-      <li class="flex items-start gap-2">
+        <span><strong>Obsession</strong> : utilisation excessive de ces types basiques</span>
+      </div>
+      <div class="bg-white rounded p-2 text-sm mt-2">
+        <div class="text-red-600 mb-1">❌ <code>private string $price; // "19.99€"</code></div>
+        <div class="text-green-600">✅ <code>private Price $price;</code></div>
+      </div>
+      <div class="flex items-start gap-2 mt-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Détection des anti-patterns</span>
-      </li>
-    </ul>
+        <span>Code difficile à comprendre et à maintenir</span>
+      </div>
+    </div>
   </div>
 
   <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
@@ -518,56 +550,80 @@ layout: default
 layout: default
 ---
 
-<div class="px-8 py-6 h-full flex flex-col">
+<div class="px-8 py-4 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-4">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
     <img src="/img/pascal-martin.png" alt="Pascal Martin" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Pascal MARTIN</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">Quatre patterns avancés</h1>
-    <p class="text-xl text-gray-600">Pour améliorer la résilience d'une application</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">Quatre patterns avancés pour améliorer la résilience d'une application</h1>
+    <p class="text-lg text-gray-600">Métaphore : Machine à café ☕ = Serveur • Personnes = Requêtes</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🔄</span> Gestion des charges
+<div class="flex-1 grid grid-cols-2 gap-4">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">☕</span> Gestion du cache
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Random Jitter : aléatoire pour lisser les requêtes</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Exponential Backoff : délais croissants</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Constant Work : nombre fixe de traitements</span>
-      </li>
-    </ul>
+    <div class="text-sm text-gray-700 space-y-2">
+      <div>
+        <div class="font-semibold text-blue-700">Préparer les cafés en avance</div>
+        <div class="text-xs">Générer les réponses avant la demande, mise en cache</div>
+      </div>
+      <div class="bg-orange-50 p-2 rounded border-l-2 border-orange-400">
+        <div class="text-xs text-orange-700">
+          <span class="font-bold">⚠️ Warning :</span> Ne pas vider tous les caches en même temps pour éviter la régénération massive
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🏗️</span> Architecture
+  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 shadow-md border-l-4 border-purple-500">
+    <h3 class="text-xl font-bold text-purple-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">🔁</span> Exponential Backoff
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
+    <div class="text-sm text-gray-700 space-y-2">
       <div>
-        <div class="font-semibold text-blue-700 mb-1">Cell-based Architecture</div>
-        <div class="text-sm">Réduire le rayon d'explosion, isoler les cellules</div>
+        <div class="font-semibold text-purple-700">Espacer les retry</div>
+        <div class="text-xs">Attendre de plus en plus longtemps : 1s, 2s, 4s, 8s, 16s...</div>
       </div>
-      <div>
-        <div class="font-semibold text-purple-700 mb-1">Shuffle Sharding</div>
-        <div class="text-sm">Distribution optimisée des ressources</div>
+      <div class="bg-orange-50 p-2 rounded border-l-2 border-orange-400">
+        <div class="text-xs text-orange-700">
+          <span class="font-bold">⚠️ Warning :</span> Mieux vaut éviter les retry (failed query)
+        </div>
       </div>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-4 shadow-md border-l-4 border-amber-500">
+    <h3 class="text-xl font-bold text-amber-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">⚙️</span> Constant Work
+    </h3>
+    <div class="text-sm text-gray-700 space-y-2">
       <div>
-        <div class="font-semibold text-green-700 mb-1">Objectif</div>
-        <div class="text-sm">Robustesse et stabilité en production</div>
+        <div class="font-semibold text-amber-700">Nombre fixe de traitements</div>
+        <div class="text-xs">La machine prépare toujours le même nombre de cafés, quitte à en préparer des fictifs</div>
+      </div>
+      <div class="text-xs text-gray-600 italic">
+        Pas de variabilité = robustesse et stabilité
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4 shadow-md border-l-4 border-green-500">
+    <h3 class="text-xl font-bold text-green-900 mb-3 flex items-center gap-2">
+      <span class="text-2xl">🏗️</span> Cell-based Architecture
+    </h3>
+    <div class="text-sm text-gray-700 space-y-2">
+      <div>
+        <div class="font-semibold text-green-700">Découper, isoler</div>
+        <div class="text-xs">Réduire le rayon d'explosion d'une application</div>
+      </div>
+      <div class="text-xs text-gray-600">
+        Cellules = sous-éléments indépendants et isolés
       </div>
     </div>
   </div>
