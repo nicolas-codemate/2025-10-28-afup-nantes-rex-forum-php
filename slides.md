@@ -782,8 +782,8 @@ layout: default
 
 <div class="flex items-start gap-6 mb-8">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
-    <img src="/img/baptiste-langlade.png" alt="Baptiste Langlade" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
-    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Baptiste LANGLADE</div>
+    <img src="/img/xavier-leune.png" alt="Xavier Leune" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
+    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Xavier LEUNE</div>
   </div>
   <div class="flex-1">
     <h1 class="text-5xl font-bold text-gray-800 mb-3">180 000 requêtes par seconde</h1>
@@ -799,35 +799,43 @@ layout: default
     <ul class="space-y-2 text-base text-gray-700">
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Exécuter un maximum de requêtes à un serveur</span>
+        <span>Envoyer des notifications webpush à haute vitesse</span>
       </li>
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Parallélisation des requêtes</span>
+        <span>Parallélisation maximale des requêtes</span>
       </li>
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Utilisation de cURL sans librairie</span>
+        <span>cURL natif sans librairie pour contrôle total réseau</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-blue-500 mt-1">▸</span>
+        <span>Éviter le busy looping avec curl_multi_select</span>
       </li>
     </ul>
   </div>
 
   <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
     <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">⚡</span> Optimisations
+      <span class="text-3xl">⚡</span> Techniques avancées
     </h3>
     <div class="space-y-3 text-base text-gray-700">
       <div>
-        <div class="font-semibold text-blue-700 mb-1">Busy Looping</div>
-        <div class="text-sm">HTTP version, TCP/UDP optimisés</div>
+        <div class="font-semibold text-blue-700 mb-1">HTTP/2 multiplexing</div>
+        <div class="text-sm">Nombreuses requêtes sur une seule connexion</div>
       </div>
       <div>
-        <div class="font-semibold text-purple-700 mb-1">Multi-thread</div>
-        <div class="text-sm">Shared memory pour performances</div>
+        <div class="font-semibold text-purple-700 mb-1">Multi-threading pcntl</div>
+        <div class="text-sm">Fork par cœur CPU + shared memory (shmop)</div>
       </div>
       <div>
-        <div class="font-semibold text-green-700 mb-1">Résultat</div>
-        <div class="text-sm">180 000 req/s : une prouesse technique</div>
+        <div class="font-semibold text-orange-700 mb-1">DNS round-robin</div>
+        <div class="text-sm">Répartition charge sur multiples serveurs</div>
+      </div>
+      <div>
+        <div class="font-semibold text-green-700 mb-1">Résultat final</div>
+        <div class="text-sm">180 000 req/s avec PHP 8.4 !</div>
       </div>
     </div>
   </div>
@@ -841,60 +849,124 @@ layout: default
 
 <div class="px-8 py-6 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-4">
+  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
+    <img src="/img/xavier-leune.png" alt="Xavier Leune" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
+    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Xavier LEUNE</div>
+  </div>
+  <div class="flex-1">
+    <h1 class="text-3xl font-bold text-gray-800 mb-2">Dashboard de monitoring temps réel</h1>
+    <p class="text-base text-gray-600">
+      <a href="https://github.com/xavierleune/180000-rps" class="text-blue-600 hover:underline">github.com/xavierleune/180000-rps</a>
+    </p>
+  </div>
+</div>
+
+<div class="flex-1 flex items-center justify-center">
+  <img src="/img/180000-rps-dashboard.png" alt="Dashboard monitoring" class="max-h-full max-w-full object-contain rounded-lg shadow-xl border-2 border-gray-200" />
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="px-8 py-4 h-full flex flex-col">
+
+<div class="flex items-start gap-6 mb-3">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
     <img src="/img/edouard-courty.png" alt="Edouard Courty" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Edouard COURTY</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">Créer un serveur MCP avec Symfony</h1>
-    <p class="text-xl text-gray-600">Le Model Context Protocol pour l'interaction avec les IA</p>
+    <h1 class="text-3xl font-bold text-gray-800 mb-1">Créer un serveur MCP avec Symfony</h1>
+    <p class="text-base text-gray-600">Le Model Context Protocol pour l'interaction avec les IA</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🔧</span> Intégration Symfony
+<div class="grid grid-cols-2 gap-4 flex-1">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-3 shadow-md border-l-4 border-blue-500 flex flex-col">
+    <h3 class="text-lg font-bold text-blue-900 mb-2 flex items-center gap-2">
+      <span class="text-xl">🔧</span> Bundle Symfony : DX optimale
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Plusieurs bundles disponibles dans l'écosystème</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Attributs : tools, resource, prompt</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Support Symfony UX</span>
-      </li>
-    </ul>
+    <div class="space-y-2 text-xs text-gray-700">
+      <div>
+        <div class="font-semibold text-blue-700 mb-1">Exposition d'un outil</div>
+        <pre class="text-xs bg-white p-2 rounded leading-tight"><code>#[AsTool(
+  name: 'read_file',
+  description: 'Reads a file...'
+)]
+class MyTool {
+  public function __invoke(
+    ReadFileSchema $payload
+  ): ToolResult { ... }
+}</code></pre>
+      </div>
+      <div>
+        <div class="font-semibold text-purple-700">Gestion automatique</div>
+        <div class="text-xs">Transport HTTP / stdio, sérialisation JSON, validation</div>
+      </div>
+    </div>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🎯</span> Points clés
-    </h3>
-    <div class="space-y-3 text-base text-gray-700">
-      <div>
-        <div class="font-semibold text-purple-700 mb-1">Cas d'usage</div>
-        <div class="text-sm">Chatbot e-commerce : commandes, support client</div>
+  <div class="flex flex-col space-y-3">
+    <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-3 shadow-md border-l-4 border-red-500">
+      <h3 class="text-base font-bold text-red-900 mb-2 flex items-center gap-2">
+        <span class="text-lg">⚠️</span> Limitations critiques
+      </h3>
+      <div class="grid grid-cols-2 gap-x-3 text-xs text-gray-700">
+        <div class="space-y-0.5">
+          <div>• Qualité/sécurité non garantie</div>
+          <div>• Mauvais choix d'outil</div>
+          <div>• Trop d'outils = IA perdue</div>
+        </div>
+        <div class="space-y-0.5">
+          <div>• Hallucinations LLM</div>
+          <div>• Prompt injection</div>
+          <div class="text-blue-700 font-semibold">💡 Agent surveillant</div>
+        </div>
       </div>
-      <div>
-        <div class="font-semibold text-orange-700 mb-1">⚠️ Limitations</div>
-        <div class="text-sm">Dépendance au prompt, risques de sécurité</div>
-      </div>
-      <div>
-        <div class="font-semibold text-green-700 mb-1">🚀 État actuel</div>
-        <div class="text-sm">Technologie récente en évolution rapide</div>
+    </div>
+    <div class="bg-indigo-50 rounded-xl p-3 shadow-md border-l-4 border-indigo-500">
+      <h3 class="text-base font-bold text-indigo-900 mb-2 flex items-center gap-2">
+        <span class="text-lg">🚀</span> Écosystème MCP en évolution
+      </h3>
+      <div class="space-y-1.5 text-xs text-gray-700">
+        <div>
+          <span class="font-semibold text-indigo-700">Specs en mutation: </span>
+          <span>Protocole très récent, changements fréquents</span>
+        </div>
+        <div>
+          <span class="font-semibold text-purple-700">Adoption en cours: </span>
+          <span>Intégration progressive dans les outils IA</span>
+        </div>
+        <div>
+          <span class="font-semibold text-blue-700">Initiative PHP: </span>
+          <span>SDK officiel disponible</span>
+        </div>
+        <div>
+          <span class="font-semibold text-green-700">symfony/ai: </span>
+          <span>Support natif MCP, référence pour l'écosystème Symfony</span>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 </div>
+
+<!--
+**Note orale - Cas d'usage Chatbot e-commerce** :
+
+Édouard a présenté des démos impressionnantes d'un chatbot e-commerce où l'utilisateur peut :
+- Passer une commande en langage naturel ("Je voudrais commander 2 t-shirts bleus")
+- Modifier une adresse de livraison ("Change mon adresse pour 10 rue de la Paix, Paris")
+- L'IA accède à la base de données et interagit avec elle via les outils mis à disposition sur le serveur MCP
+- Conversation naturelle comme avec un agent humain
+
+C'est bluffant mais on voit rapidement apparaître les limites mentionnées : qualité des données non vérifiées, risque de mauvais choix d'outils, etc.
+-->
 
 ---
 layout: default
