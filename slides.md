@@ -559,7 +559,6 @@ layout: default
   </div>
   <div class="flex-1">
     <h1 class="text-4xl font-bold text-gray-800 mb-2">Quatre patterns avancés pour améliorer la résilience d'une application</h1>
-    <p class="text-lg text-gray-600">Métaphore : Machine à café ☕ = Serveur • Personnes = Requêtes</p>
   </div>
 </div>
 
@@ -635,28 +634,28 @@ layout: default
 layout: default
 ---
 
-<div class="px-8 py-6 h-full flex flex-col">
+<div class="px-8 py-4 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-4">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
-    <img src="/img/olivier-openclassrooms.png" alt="Olivier" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
-    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Olivier</div>
+    <img src="/img/olivier-openclassrooms.png" alt="Olivier Mairet" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
+    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Olivier MAIRET</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">10 ans de Clean Architecture</h1>
-    <p class="text-xl text-gray-600">chez OpenClassrooms : le rêve, la réalité, les leçons</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-2">10 ans de Clean Architecture</h1>
+    <p class="text-lg text-gray-600">chez OpenClassrooms : le rêve, la réalité, les leçons</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">📖</span> Le parcours
+<div class="grid grid-cols-2 gap-4">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-2xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+      <span class="text-3xl">✨</span> Le rêve
     </h3>
     <ul class="space-y-2 text-base text-gray-700">
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
-        <span>Métier au centre : game changer pour l'évolution</span>
+        <span>Métier au centre, indépendant du framework</span>
       </li>
       <li class="flex items-start gap-2">
         <span class="text-blue-500 mt-1">▸</span>
@@ -666,27 +665,41 @@ layout: default
         <span class="text-blue-500 mt-1">▸</span>
         <span>12 ans sans refonte majeure</span>
       </li>
+      <li class="flex items-start gap-2">
+        <span class="text-blue-500 mt-1">▸</span>
+        <span>600 UseCases aujourd'hui</span>
+      </li>
     </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">💡</span> Leçons apprises
+  <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 shadow-md border-l-4 border-orange-500">
+    <h3 class="text-2xl font-bold text-orange-900 mb-3 flex items-center gap-2">
+      <span class="text-3xl">😱</span> La réalité
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
-      <div>
-        <div class="font-semibold text-blue-700 mb-1">Pragmatisme vs dogmatisme</div>
-        <div class="text-sm">Simplification progressive de l'architecture</div>
+    <div class="space-y-2 text-base text-gray-700">
+      <div class="bg-white rounded p-2 border-l-2 border-red-400">
+        <div class="font-semibold text-red-700 mb-1 text-base">Hyper complexe</div>
+        <div class="text-sm">20 à 30 classes pour une route GET 🤯</div>
       </div>
       <div>
-        <div class="font-semibold text-purple-700 mb-1">Cohésion</div>
-        <div class="text-sm">Regrouper ce qui change pour les mêmes raisons</div>
-      </div>
-      <div>
-        <div class="font-semibold text-green-700 mb-1">Évolution</div>
-        <div class="text-sm">L'architecture doit s'adapter au contexte</div>
+        <div class="font-semibold text-orange-700 mb-1 text-base">Simplifications nécessaires</div>
+        <div class="text-sm">• Contrôleur unique pour tous les UseCases</div>
+        <div class="text-sm">• Retrait de certaines interfaces</div>
+        <div class="text-sm">• Hydratation au lieu d'assembleurs</div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="mt-4 grid grid-cols-3 gap-3">
+  <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-3 shadow-md border-l-4 border-green-500">
+    <div class="font-bold text-green-900 text-center text-sm">✅ Onboarding amélioré</div>
+  </div>
+  <div class="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-lg p-3 shadow-md border-l-4 border-blue-500">
+    <div class="font-bold text-blue-900 text-center text-sm">🎯 Pragmatisme retrouvé</div>
+  </div>
+  <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-3 shadow-md border-l-4 border-purple-500">
+    <div class="font-bold text-purple-900 text-center text-sm">🔗 Cohésion maintenue</div>
   </div>
 </div>
 
@@ -712,27 +725,7 @@ layout: default
 <div class="flex-1 grid grid-cols-2 gap-6">
   <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
     <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🔧</span> Attributs utiles
-    </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Autowire, AutoConfigureTag, AutowireIterator</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>AsAlias, AsDecorator, AsTaggedItem</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>AutowireInline, AutowireCallable, AutowireMethodOf</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">⚡</span> Performance
+      <span class="text-3xl">📚</span> Rappels
     </h3>
     <div class="space-y-3 text-base text-gray-700">
       <div>
@@ -740,12 +733,40 @@ layout: default
         <div class="text-sm">Structurer le code pour permettre le changement</div>
       </div>
       <div>
-        <div class="font-semibold text-purple-700 mb-1">#Lazy</div>
-        <div class="text-sm">Casser les chaînes de dépendance avec closures</div>
+        <div class="font-semibold text-purple-700 mb-1">Compile vs Runtime</div>
+        <div class="text-sm">Optimiser l'injection de dépendances</div>
       </div>
       <div>
-        <div class="font-semibold text-green-700 mb-1">Compile vs Runtime</div>
-        <div class="text-sm">Optimiser l'injection de dépendances</div>
+        <div class="font-semibold text-green-700 mb-1">#Lazy</div>
+        <div class="text-sm">Casser les chaînes de dépendance avec closures</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 shadow-md border-l-4 border-purple-500">
+    <h3 class="text-sm font-bold text-purple-900 mb-2 flex items-center gap-1.5">
+      <span class="text-base">⚡</span> Astuces de performance
+    </h3>
+    <div class="space-y-1 text-xs">
+      <div class="bg-white p-2 rounded shadow-sm">
+        <div class="font-bold text-purple-700 mb-0.5 text-sm">#[Lazy]</div>
+        <div class="text-gray-600">Charge le service uniquement si utilisé</div>
+      </div>
+      <div class="bg-white p-2 rounded shadow-sm">
+        <div class="font-bold text-blue-700 mb-0.5 text-sm">#[AutowireInline]</div>
+        <div class="text-gray-600">Service anonyme configuré à la volée</div>
+      </div>
+      <div class="bg-white p-2 rounded shadow-sm">
+        <div class="font-bold text-green-700 mb-0.5 text-sm">#[AutowireCallable]</div>
+        <div class="text-gray-600">Closure vers une méthode de service</div>
+      </div>
+      <div class="bg-white p-2 rounded shadow-sm">
+        <div class="font-bold text-orange-700 mb-0.5 text-sm">#[AutowireMethodOf]</div>
+        <div class="text-gray-600">Syntaxe courte (nom = méthode)</div>
+      </div>
+      <div class="bg-white p-2 rounded shadow-sm">
+        <div class="font-bold text-red-700 mb-0.5 text-sm">#[AutowireServiceClosure]</div>
+        <div class="text-gray-600">Lazy instantiation du service</div>
       </div>
     </div>
   </div>

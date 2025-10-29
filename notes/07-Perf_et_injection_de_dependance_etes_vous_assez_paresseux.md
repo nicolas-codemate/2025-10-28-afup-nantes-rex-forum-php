@@ -11,16 +11,16 @@ Quelques attributes utiles pour la DI
 Autowire
 AutoConfigureTag
 AutowireIterator 
-AutiwireLocator
+AutowireLocator
 
 AsAlias
 AsDecorator 
 AsTaggedItem
-Auticonfigure 
+Autoconfigure 
 
 AutowireInline
 AutowireCallable
-AutoxireMethodOf
+AutowireMethodOf
 
 
 Casser les chaînes de dépendance pour améliorer performance 
