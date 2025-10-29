@@ -972,61 +972,65 @@ C'est bluffant mais on voit rapidement apparaître les limites mentionnées : qu
 layout: default
 ---
 
-<div class="px-8 py-6 h-full flex flex-col">
+<div class="px-8 py-3 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
+<div class="flex items-start gap-6 mb-2">
   <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
     <img src="/img/clement-talleu.png" alt="Clément Talleu" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Clément TALLEU</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">Créer un RAG en PHP</h1>
-    <p class="text-xl text-gray-600">Démystifier l'IA avec les bonnes pratiques</p>
+    <h1 class="text-4xl font-bold text-gray-800 mb-1">Créer un RAG en PHP</h1>
+    <p class="text-base text-gray-600">Rendre accessible une architecture IA puissante</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">📚</span> Qu'est-ce qu'un RAG ?
+<div class="flex-1 grid grid-cols-2 gap-2.5">
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-2.5 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-lg font-bold text-blue-900 mb-1.5 flex items-center gap-2">
+      <span class="text-xl">📚</span> Retrieval-Augmented Generation
     </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Génération augmentée par la récupération</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Base documentaire indexée ajoutée au contexte LLM</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Base de données vectorielle (pgvector)</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Support Doctrine disponible</span>
-      </li>
-    </ul>
+    <div class="space-y-1.5 text-sm text-gray-700">
+      <div class="bg-white rounded p-1.5 border-l-2 border-blue-400">
+        <div class="font-semibold text-blue-700 mb-0.5 text-xs">Objectif</div>
+        <div class="text-xs">Éviter les hallucinations en fournissant un contexte fiable extrait de nos propres données</div>
+      </div>
+      <div class="text-xs text-gray-600 italic">
+        Architecture IA puissante qui contextualise les réponses des LLM avec des données vérifiées
+      </div>
+    </div>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">🔧</span> Mise en œuvre
+  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-2.5 shadow-md border-l-4 border-purple-500">
+    <h3 class="text-lg font-bold text-purple-900 mb-1.5 flex items-center gap-2">
+      <span class="text-xl">🔧</span> Le processus en 5 étapes
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
-      <div>
-        <div class="font-semibold text-blue-700 mb-1">Chunking</div>
-        <div class="text-sm">Découpage sémantique du texte</div>
+    <div class="space-y-0.5 text-xs text-gray-700">
+      <div class="bg-white p-1.5 rounded shadow-sm border-l-2 border-blue-400">
+        <div><span class="font-bold text-blue-700">1. Chunking:</span> Découpage du texte source en petits morceaux</div>
+        <div class="text-xs text-orange-700 mt-0.5">⚠️ Utiliser des outils IA spécialisés, pas de découpage manuel ou PHP</div>
       </div>
-      <div>
-        <div class="font-semibold text-purple-700 mb-1">API externe ou locale</div>
-        <div class="text-sm">OpenAI, Mistral ou Ollama</div>
+      <div class="bg-white p-1 rounded shadow-sm">
+        <span class="font-bold text-purple-700">2. Embeddings:</span> Transformation en vecteurs mathématiques
       </div>
-      <div>
-        <div class="font-semibold text-green-700 mb-1">Cas d'usage</div>
-        <div class="text-sm">Chatbot règlement RH, documentation</div>
+      <div class="bg-white p-1 rounded shadow-sm">
+        <span class="font-bold text-green-700">3. Stockage:</span> PostgreSQL avec extension pg_vector
       </div>
+      <div class="bg-white p-1 rounded shadow-sm">
+        <span class="font-bold text-orange-700">4. Recherche:</span> Question utilisateur vectorisée, morceaux proches trouvés
+      </div>
+      <div class="bg-white p-1 rounded shadow-sm">
+        <span class="font-bold text-red-700">5. Génération:</span> Morceaux injectés dans le prompt pour réponse précise
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-2">
+  <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-2 shadow-md border-l-4 border-green-500">
+    <div class="font-bold text-green-900 text-sm mb-1">🛠️ Outils de l'écosystème PHP</div>
+    <div class="text-xs text-gray-700">
+      <span class="font-semibold">LLPhant</span> : librairie PHP pour manipuler les embeddings • <span class="font-semibold">Symfony AI</span> : initiative pour faciliter l'intégration IA
     </div>
   </div>
 </div>
@@ -1037,10 +1041,14 @@ layout: default
 layout: default
 ---
 
+<!--
+**Note présentateur** : Histoire d'un POC en IA générative qui développe une app de recettes de cuisine à partir d'une photo. Un utilisateur s'est empoisonné en ajoutant une limace qu'il avait cru reconnaître, et ça lui semblait logique car lu dans un livre (Harry Potter). Cela illustre parfaitement le danger de baser un produit sur une technologie qui peut halluciner.
+-->
+
 <div class="px-8 py-6 h-full flex flex-col">
 
 <div class="flex items-start gap-6 mb-8">
-  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
+  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 130px;">
     <img src="/img/francois-zaninotto.png" alt="François Zaninotto" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
     <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">François ZANINOTTO</div>
   </div>
@@ -1051,47 +1059,71 @@ layout: default
 </div>
 
 <div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">⚠️</span> Le défi
+  <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6 shadow-md border-l-4 border-red-500">
+    <h3 class="text-2xl font-bold text-red-900 mb-4 flex items-center gap-2">
+      <span class="text-3xl">⚠️</span> Le problème
     </h3>
     <ul class="space-y-2 text-base text-gray-700">
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Résultat d'un agent est imprévisible</span>
+        <span class="text-red-500 mt-1">▸</span>
+        <span>Les agents IA <strong>pilotés par du texte</strong>, pas du code</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Comment s'assurer qu'il ne se trompe pas ?</span>
+        <span class="text-red-500 mt-1">▸</span>
+        <span>Résultats <strong>imprévisibles et hallucinations</strong></span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Tester avec toutes les configurations</span>
+        <span class="text-red-500 mt-1">▸</span>
+        <span>Impossible de garantir qu'ils seront dans le vrai</span>
       </li>
       <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Multiplication des IA augmente la probabilité de failure</span>
+        <span class="text-red-500 mt-1">▸</span>
+        <span class="bg-orange-100 px-2 py-1 rounded">Votre application <strong>va forcément planter</strong> un jour</span>
       </li>
     </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">✅</span> Bonnes pratiques
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
+    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+      <span class="text-3xl">🧪</span> La solution
     </h3>
-    <div class="space-y-3 text-base text-gray-700">
+    <div class="space-y-2 text-base text-gray-700">
       <div>
-        <div class="font-semibold text-blue-700 mb-1">Pattern Strategy</div>
-        <div class="text-sm">Choisir le bon pattern pour le contexte</div>
+        <div class="font-semibold text-blue-700 mb-1">Benchmarks complets</div>
+        <div class="text-sm">Brute force de tous les modèles, températures, tailles...</div>
       </div>
       <div>
-        <div class="font-semibold text-purple-700 mb-1">Métriques</div>
-        <div class="text-sm">Quelques métriques à la fois, attention écart-type</div>
+        <div class="font-semibold text-purple-700 mb-1">Agent de test</div>
+        <div class="text-sm">Utiliser un LLM pour évaluer les réponses avec données de test humaines</div>
       </div>
       <div>
-        <div class="font-semibold text-green-700 mb-1">Outils Eval</div>
-        <div class="text-sm">Librairies dédiées, graphiques, conservation</div>
+        <div class="font-semibold text-green-700 mb-1">Métriques multiples</div>
+        <div class="text-sm">Justesse, format de sortie, rapidité, prix</div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4 shadow-md border-l-4 border-green-500">
+  <h3 class="text-xl font-bold text-green-900 mb-3 flex items-center gap-2">
+    <span class="text-2xl">💡</span> Pro-Tips
+  </h3>
+  <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+    <div class="flex items-start gap-2">
+      <span class="text-green-500 mt-1">✓</span>
+      <span><strong>Outils</strong> : DeepEval, Ragas, LangSmith</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-green-500 mt-1">✓</span>
+      <span><strong>Stocker</strong> tous les résultats en BDD</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-green-500 mt-1">✓</span>
+      <span><strong>Inclure</strong> des données de production dans les tests</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <span class="text-green-500 mt-1">✓</span>
+      <span><strong>Commencer</strong> avec le meilleur modèle puis affiner</span>
     </div>
   </div>
 </div>
@@ -1102,59 +1134,139 @@ layout: default
 layout: default
 ---
 
-<div class="px-8 py-6 h-full flex flex-col">
+<div class="px-8 py-3 h-full flex flex-col">
 
-<div class="flex items-start gap-6 mb-8">
-  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-2 shadow-md text-center" style="width: 110px;">
-    <img src="/img/xavier-leune.png" alt="Xavier Leune" class="rounded-full w-14 h-14 object-cover mx-auto mb-1.5 border-2 border-blue-300" />
-    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.7rem;">Xavier LEUNE</div>
+<div class="flex items-start gap-4 mb-0.5">
+  <div class="flex-shrink-0 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg p-1.5 shadow-md text-center" style="width: 100px;">
+    <img src="/img/xavier-leune.png" alt="Xavier Leune" class="rounded-full w-12 h-12 object-cover mx-auto mb-1 border-2 border-blue-300" />
+    <div class="text-xs font-semibold text-blue-900 leading-tight whitespace-nowrap" style="font-size: 0.65rem;">Xavier LEUNE</div>
   </div>
   <div class="flex-1">
-    <h1 class="text-5xl font-bold text-gray-800 mb-3">Comment être un bon dév à l'heure de l'IA ?</h1>
-    <p class="text-xl text-gray-600">Impact de l'IA générative sur notre métier</p>
+    <h1 class="font-bold text-gray-800 mb-0" style="font-size: 1.65rem;">Comment être un bon dév à l'heure de l'IA ?</h1>
+    <p class="text-sm text-gray-600">La seule constante dans notre métier, c'est le changement</p>
   </div>
 </div>
 
-<div class="flex-1 grid grid-cols-2 gap-6">
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">💼</span> Enjeux du marché
-    </h3>
-    <ul class="space-y-2 text-base text-gray-700">
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Les entreprises IA vampirisent la croissance US</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Coûts colossaux des datacenters</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <span class="text-blue-500 mt-1">▸</span>
-        <span>Risque de bulle économique</span>
-      </li>
-    </ul>
-  </div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 0.5rem; flex: 1;">
 
-  <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-    <h3 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
-      <span class="text-3xl">📊</span> Productivité
-    </h3>
-    <div class="space-y-3 text-base text-gray-700">
-      <div>
-        <div class="font-semibold text-green-700 mb-1">✅ Juniors</div>
-        <div class="text-sm">Gain de delivery constaté</div>
-      </div>
-      <div>
-        <div class="font-semibold text-orange-700 mb-1">⚠️ Seniors</div>
-        <div class="text-sm">Impact cognitif plus important (review)</div>
-      </div>
-      <div>
-        <div class="font-semibold text-blue-700 mb-1">🎓 Conseil</div>
-        <div class="text-sm">Formez-vous le plus tôt possible</div>
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-1.5 shadow-md border-l-4 border-blue-500">
+<h3 class="font-bold text-blue-900 mb-1" style="font-size: 1.1rem;">📊 Impact de l'IA</h3>
+<div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.65rem;">
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-green-700 mb-0.5">✅ Gain de productivité</div>
+<div>Toutes les études convergent • 79% des devs l'utilisent</div>
+</div>
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-red-700 mb-0.5">📉 Baisse des emplois</div>
+<div>Tech layoffs depuis 2023 • 40% des licenciements chez MS</div>
+</div>
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-purple-700 mb-0.5">🔄 Natural Language Devs</div>
+<div>Coder en parlant à l'IA, pas en tapant du code</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-1.5 shadow-md border-l-4 border-purple-500">
+<h3 class="font-bold text-purple-900 mb-1" style="font-size: 1.1rem;">⚡ Nouveaux défis</h3>
+<div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.65rem;">
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-red-700 mb-0.5">🧠 Charge cognitive accrue</div>
+<div>Code plus vite • Plus de review • Charge mentale élevée</div>
+</div>
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-orange-700 mb-0.5">⚠️ Désappropriation du code</div>
+<div>Perte de contrôle • Complexité artificielle • Responsable en prod</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-1.5 shadow-md border-l-4 border-orange-500">
+<h3 class="font-bold text-orange-900 mb-1" style="font-size: 1.1rem;">🎭 Mode passagère ?</h3>
+<div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.65rem;">
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-orange-700 mb-0.5">📜 Déjà vu ?</div>
+<div>Visual Basic, Dreamweaver, UML, No-Code...</div>
+</div>
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-red-700 mb-0.5">💸 Bulle IA ?</div>
+<div>Coûts colossaux • 3,69 milliards d'abonnés pour financer les datacenters</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-1.5 shadow-md border-l-4 border-green-500">
+<h3 class="font-bold text-green-900 mb-1" style="font-size: 1.1rem;">🎯 S'adapter</h3>
+<div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.65rem;">
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-blue-700 mb-0.5">🎓 Formation continue</div>
+<div>Maîtriser les outils IA dès maintenant</div>
+</div>
+<div class="bg-white p-1 rounded text-gray-700">
+<div class="font-semibold text-purple-700 mb-0.5">💡 Rester vigilant</div>
+<div>Si bulle éclate : coût tokens ↗ • Arbitrages • Outils restent</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt-3 bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-1.5 shadow-lg border-l-4 border-green-600">
+  <div class="font-bold text-green-900 text-center text-sm">🎓 Formez-vous maintenant • Le plus tôt vous maîtriserez ces outils, le plus employable vous serez</div>
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="px-8 py-3 h-full flex flex-col">
+
+<h1 class="text-xl font-bold text-gray-800 mb-2 text-center">Pour finir...</h1>
+
+<div class="flex-1 flex flex-col justify-center space-y-2">
+
+<div class="grid grid-cols-2 gap-3">
+  <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-2 shadow-md border-l-4 border-purple-500">
+    <h2 class="text-sm font-bold text-purple-900 mb-1 text-center">🎭 Les talks "OVNI"</h2>
+    <p class="text-xs text-gray-700 text-center mb-1" style="font-size: 0.7rem;">
+      Chaque journée se terminait par un talk non-tech
+    </p>
+    <div class="bg-white rounded p-1.5 shadow-sm">
+      <div class="text-xs font-bold text-purple-800 mb-0.5">⭐ Coup de cœur : Thibaut SOULCIÉ</div>
+      <div class="text-gray-600 italic mb-0.5" style="font-size: 0.65rem;">"C'est pas très marrant de devoir être drôle tout le temps"</div>
+      <div class="text-gray-700" style="font-size: 0.7rem;">
+        Dessinateur satirique, un véritable <strong>one man show</strong> plein d'autodérision !
       </div>
     </div>
   </div>
+
+  <div class="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg p-2 shadow-md border-l-4 border-blue-500">
+    <h2 class="text-sm font-bold text-blue-900 mb-1 text-center">📚 Et bien d'autres talks...</h2>
+    <p class="text-gray-700 text-center" style="font-size: 0.7rem;">
+      Plus de <strong>40 conférences</strong> sur 2 jours : Symfony 8, PHP 8.5, Laravel, Kubernetes, Security, RGAA...
+    </p>
+    <div class="mt-1.5 bg-orange-50 rounded p-1.5 border-l-4 border-orange-400">
+      <p class="text-xs font-bold text-orange-900 text-center">
+        📹 Replays disponibles dès le <strong>1er décembre 2025</strong>
+      </p>
+      <p class="text-gray-700 text-center" style="font-size: 0.7rem;">
+        🎄 Une vidéo par jour, comme un calendrier de l'avent !
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-lg p-2 shadow-md border-l-4 border-green-500">
+  <p class="text-sm font-bold text-green-900 text-center mb-0.5">
+    🙏 Merci à l'AFUP pour cette organisation impeccable !
+  </p>
+  <p class="text-xs text-green-800 text-center">
+    👋 Rendez-vous l'année prochaine au Forum PHP 2026 !
+  </p>
+</div>
+
 </div>
 
 </div>
