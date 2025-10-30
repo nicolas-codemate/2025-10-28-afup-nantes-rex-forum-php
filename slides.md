@@ -161,17 +161,19 @@ layout: default
 
 </div>
 
+<!--
+Enumération des failles et solutions simples à mettre en oeuvre
+
+Stats choc sur la fermeture des entreprises victime
+
+Notre responsabilité en tant que dev
+
+Beaucoup de ressources à notre disposition
+-->
+
 ---
 layout: default
 ---
-
-<!--
-**Mise en scène** : Lætitia habillée en avocate, plaidoirie pour SQL
-
-**Griefs courants** : lenteur, complexité, verbosité, pas moderne, dépassé par les ORM, dépassé par le NoSQL, performances douteuses
-
-**Démonstration** : Comparaison scripts PHP multi-requêtes vs query SQL unique - meilleures performances
--->
 
 <div class="px-8 py-3 h-full flex flex-col">
 
@@ -228,6 +230,14 @@ WHERE rank <= 3;</code></pre>
 </div>
 
 </div>
+
+<!--
+Mise en scène : Lætitia habillée en avocate, plaidoirie pour SQL
+
+Griefs courants : lenteur, complexité, verbosité, pas moderne, dépassé par les ORM, dépassé par le NoSQL, performances douteuses
+
+Démonstration : Comparaison scripts PHP multi-requêtes vs query SQL unique - meilleures performances
+-->
 
 ---
 layout: default
@@ -334,6 +344,16 @@ layout: default
 
 </div>
 
+<!--
+Rappel de base de la promesse e composer : 
+- résout dépendance
+- reproductibilité avec le .lock
+- vérification d'intégrité
+
+Autoloading en prod : 
+- possible d'utiliser l'APCu
+-->
+
 ---
 layout: default
 ---
@@ -398,6 +418,17 @@ layout: default
 </div>
 
 </div>
+
+<!--
+Fonctionnalité déjà connus : 
+- early hint
+- intégration de mercure (temps reel)
+- worker mode sous réserve que l'application soit correctement codé (stateless)
+
+Nouveauté : 
+- packager l'appli en 1 binaire
+-  intégration des extensions de GO
+-->
 
 ---
 layout: default
@@ -481,6 +512,14 @@ layout: default
 
 </div>
 
+<!--
+**Mise en scène** : Lætitia habillée en avocate, plaidoirie pour SQL
+
+**Griefs courants** : lenteur, complexité, verbosité, pas moderne, dépassé par les ORM, dépassé par le NoSQL, performances douteuses
+
+**Démonstration** : Comparaison scripts PHP multi-requêtes vs query SQL unique - meilleures performances
+-->
+
 ---
 layout: default
 ---
@@ -545,6 +584,14 @@ layout: default
 </div>
 
 </div>
+
+<!--
+- primitive (string, flooat, int, array, etc.) vs object métier
+
+- beaucoup de littérature sur le sujet
+
+- trouver le bon compromis
+-->
 
 ---
 layout: default
@@ -630,6 +677,12 @@ layout: default
 
 </div>
 
+<!--
+Analogie avec une machine à café et les gens qui sortent de réunions en même temps pour demander un café
+
+quelque pattern qui peuvent paraître contre intuitif (constant work par exemple)
+-->
+
 ---
 layout: default
 ---
@@ -705,6 +758,12 @@ layout: default
 
 </div>
 
+<!--
+histoire d'une mise mise en prod qui a mal tourné chez openclassroom et le choix de passer au DDD
+
+puis au fil du temps retour à plus de pragmatisme
+-->
+
 ---
 layout: default
 ---
@@ -774,6 +833,15 @@ layout: default
 
 </div>
 
+<!--
+Masterclass de Nicolas Grekas sur l'injection de dépendance
+
+Rappel de SOLID, avec sa conclusion: structurer pour permettre le changement
+Rappel sur le fonctionnement de la DI dans symfony (compile, runtime)
+
+Enumérer quelques attributs d'injection
+-->
+
 ---
 layout: default
 ---
@@ -842,6 +910,12 @@ layout: default
 </div>
 
 </div>
+
+<!--
+L'histoire d'un défi d'envoyer 180k requête par secondes
+
+Plongé dans le protocole HTTP et la couche réseau
+-->
 
 ---
 layout: default
@@ -959,13 +1033,11 @@ class MyTool {
 <!--
 **Note orale - Cas d'usage Chatbot e-commerce** :
 
-Édouard a présenté des démos impressionnantes d'un chatbot e-commerce où l'utilisateur peut :
+Édouard a présenté des démos d'un chatbot e-commerce où l'utilisateur peut :
 - Passer une commande en langage naturel ("Je voudrais commander 2 t-shirts bleus")
 - Modifier une adresse de livraison ("Change mon adresse pour 10 rue de la Paix, Paris")
 - L'IA accède à la base de données et interagit avec elle via les outils mis à disposition sur le serveur MCP
 - Conversation naturelle comme avec un agent humain
-
-C'est bluffant mais on voit rapidement apparaître les limites mentionnées : qualité des données non vérifiées, risque de mauvais choix d'outils, etc.
 -->
 
 ---
@@ -1037,13 +1109,15 @@ layout: default
 
 </div>
 
+<!--
+Comment donner du contexte interne (non public) a nos LLM
+
+Exemple : chatbot interne sur les pratiques RH de la boîte
+-->
+
 ---
 layout: default
 ---
-
-<!--
-**Note présentateur** : Histoire d'un POC en IA générative qui développe une app de recettes de cuisine à partir d'une photo. Un utilisateur s'est empoisonné en ajoutant une limace qu'il avait cru reconnaître, et ça lui semblait logique car lu dans un livre (Harry Potter). Cela illustre parfaitement le danger de baser un produit sur une technologie qui peut halluciner.
--->
 
 <div class="px-8 py-6 h-full flex flex-col">
 
@@ -1129,6 +1203,13 @@ layout: default
 </div>
 
 </div>
+
+<!--
+**Note présentateur** : Histoire d'un POC en IA générative qui développe une app de recettes de cuisine à partir d'une photo de ce que contient un frigo.
+Un utilisateur s'est empoisonné en ajoutant une limace que l'IA avait cru reconnaître, et ça lui semblait logique car lu dans un livre (Harry Potter). 
+
+Cela illustre parfaitement le danger de baser un produit sur une technologie qui peut halluciner.
+-->
 
 ---
 layout: default
@@ -1217,6 +1298,13 @@ layout: default
 
 </div>
 
+<!--
+Conférence non technique sur l'évolution de nos métiers, qui m'a beaucoup parlé car je suis en train de le vivre 
+
+- mon workflow de développement a profondément changé depuis quelques mois avec l'utilisation des agents IA
+- 90% du code que je livre n'est plus écrit par moi
+-->
+
 ---
 layout: default
 ---
@@ -1270,3 +1358,7 @@ layout: default
 </div>
 
 </div>
+
+<!--
+J'espère vous avoir donné envie d'aller voir quelques replay et surtout d'assister à la prochaine édition
+-->
