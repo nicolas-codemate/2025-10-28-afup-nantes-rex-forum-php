@@ -20,6 +20,16 @@ colorSchema: light
   <img src="/img/logo_forumphp_2025.png" class="h-32 inline-block" alt="Forum PHP 2025 Logo" />
 </div>
 
+<!--
+Bonjour à tous ! Il y a trois semaines, j'étais à Disneyland Paris... 
+  mais pas pour les attractions ! Plus de 700 développeurs PHP se sont 
+  retrouvés au Forum PHP 2025, et aujourd'hui je vais vous partager un tour
+   express de toutes les conférences auxquelles j'ai assisté. Je ne 
+  rentrerai volontairement pas dans les détails, sinon on y passerait 5 
+  heures, mais l'objectif c'est de vous donner envie de regarder les 
+  replays
+-->
+
 ---
 layout: two-cols
 layoutClass: gap-16
@@ -43,6 +53,10 @@ layoutClass: gap-16
 - 🤖 **Boosté à l'IA**
 
 </div>
+
+<!--
+"Bonjour à tous ! Il y a trois semaines, j'étais à Disneyland Paris... mais pas pour les attractions ! Plus de 700 développeurs PHP se sont retrouvés au Forum PHP 2025, et aujourd'hui je vais vous partager un tour express de toutes les conférences auxquelles j'ai assisté. Je ne rentrerai volontairement pas dans les détails, sinon on y passerait 5 heures, mais l'objectif c'est de vous donner envie de regarder les replays !"
+-->
 
 ---
 layout: image-right
@@ -75,6 +89,10 @@ Plus d'infos : [event.afup.org/forum-php-2025](https://event.afup.org/forum-php-
 </div>
 
 </div>
+
+<!--
+L'hôtel Marvel de Disney offre un cadre idéal pour les conférences : installation confortable, sono et projection visuelle impeccables. Avec 3 tracks simultanés, impossible de tout voir ! Voici donc les conférences auxquelles j'ai assisté.
+-->
 
 ---
 layout: default
